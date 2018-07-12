@@ -1,55 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar, ScrollView, Button, Image, Alert, TouchableHighlight } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
-
-class Header extends React.Component {
-    render() {
-        return (
-            <View style={styles.header}>
-                <Text style={styles.header_text}>FoodCourt</Text>
-            </View>
-        );
-    }
-}
-
-class Footer extends React.Component {
-    render() {
-        return (
-            <View style={styles.footer}>
-                <View style={styles.footer_menu}></View>
-                <View style={styles.footer_menu}></View>
-                <View style={styles.footer_menu}></View>
-            </View>
-        );
-    }
-}
-
-const MainElement = (props) => {
-    // _onPressButton() {
-    //     Alert.alert('You tapped the button!')
-    // }
-    // render() {
-        return (
-            <TouchableHighlight underlayColor="white">
-                <View style={{height: 200, alignItems: 'center', justifyContent: 'center'}}>
-                    {/* <ImageBackground source={this.props.icon} style={styles.imagebackground}> */}
-                    <Image
-                        style={{width: '100%', height: '100%', position: 'absolute'}}
-                        source={props.icon}
-                        blurRadius={1} />
-                    <View style={styles.image_filter} />
-                    {/* <Button
-                        title="Go to Details"
-                        onPress={() => props.navigation.navigate('Details')}
-                    /> */}
-                    <Text style={[styles.header_text, {fontSize: 25, textAlign: 'center'}]}>{props.name}</Text>
-                    <Text style={[styles.header_text, {fontWeight: '100', fontSize: 15, textAlign: 'center'}]}>{props.adress}</Text>
-                    {/* </ImageBackground> */}
-                </View>
-            </TouchableHighlight>
-        );
-    // }
-}
+import Header from './components/Header'
+import Footer from './components/Footer'
+import MainElement from './components/MainElement'
 
 export default class HomeScreen extends React.Component {
     render() {
@@ -103,26 +57,8 @@ export default class HomeScreen extends React.Component {
 //   }
 // }
 
-const styles = StyleSheet.create({
-    header: {
-        backgroundColor: 'black',
-        flex: 0.1,
-        alignItems: 'center',
-        justifyContent: 'flex-end',
-        paddingBottom: 10
-    },
-    header_text: {
-        color: 'white',
-        fontWeight: 'bold',
-        fontSize: 20
-    },
-    image_filter: {
-        backgroundColor: 'black',
-        opacity: 0.6,
-        position: 'absolute',
-        width: '100%',
-        height: '100%'
-    },
+// const styles = StyleSheet.create({
+
     // imagebackground: {
     //     width: '100%',
     //     height: 200,
@@ -130,14 +66,4 @@ const styles = StyleSheet.create({
     //     justifyContent: 'center',
     //     opacity: 0.5
     // },
-    footer: {
-        flex: 0.1,
-        flexDirection: 'row'
-        // alignItems: 'center',
-        // justifyContent: 'flex-end'
-    },
-    footer_menu: {
-        flex: 1,
-        backgroundColor: 'black'
-    }
-});
+// });
