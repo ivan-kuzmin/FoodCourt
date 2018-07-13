@@ -1,35 +1,85 @@
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar, ScrollView, Button, Image, Alert, TouchableHighlight } from 'react-native';
-import { createStackNavigator } from 'react-navigation';
-import Header from './components/Header'
-import Footer from './components/Footer'
-import MainElement from './components/MainElement'
+import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
+import Icon from 'react-native-vector-icons/Entypo';
 
-export default class HomeScreen extends React.Component {
+import HomeScreen from './app/screens/HomeScreen'
+import LocationScreen from './app/screens/LocationScreen'
+import SearchScreen from './app/screens/SearchScreen'
+
+import MainElement from './app/components/MainElement'
+
+StatusBar.setBarStyle('light-content', true);
+
+export default class App extends React.Component {
     render() {
         return (
-            <View style={{flex: 1, backgroundColor: 'gray'}}>
-                <StatusBar barStyle="light-content" />
-                <Header />
-                {/* <Button
-                    title="Go to Details"
-                    onPress={() => this.props.navigation.navigate('Details')}
-                /> */}
-                <ScrollView style={{flex: 1}}>
-                    <MainElement name="Семеновская ярмарка" adress="Семеновская площадь, 4" icon={require("./assets/images/semenovskaya.jpg")} />
-                    <MainElement name="Даниловский рынок" adress="Мытная улица, 74" icon={require("./assets/images/danilovskiy.jpg")} />
-                    <MainElement name="Усачевский рынок" adress="улица Усачева, 26" icon={require("./assets/images/usachevskiy.jpg")} />
-                    <MainElement name="Гастроферма" adress="улица Нижняя Красносельская, 35, строение 59" icon={require("./assets/images/gastroferma.jpg")} />
-                    <MainElement name="Рогожский рынок" adress="площадь Рогожская Застава, 1" icon={require("./assets/images/rogozskiy.jpg")} />
-                    <MainElement name="Экомаркет в Коньково" adress="Профсоюзная улица, 126, корпус 3" icon={require("./assets/images/ekomarket.jpg")} />
-                    <MainElement name="Черемушкинский рынок" adress="улица Вавилова, 64/1, строение 1" icon={require("./assets/images/cheremushkinskiy.jpg")} />
-                    <MainElement name="Центральный рынок" adress="Рождественский бульвар, 1" icon={require("./assets/images/centralniy.jpg")} />
-                </ScrollView>
-                <Footer />
-            </View>
+            <Tabs />
         );
     }
 }
+
+export const FeedStack = createStackNavigator({
+    Home: {
+        screen: HomeScreen,
+        navigationOptions: {
+            title: "FoodCourt"
+        }
+    },
+    Details: {
+        screen: LocationScreen,
+        navigationOptions: {
+            title: "Location"
+        }
+    }
+},
+{
+    navigationOptions: {
+        headerStyle: {
+            backgroundColor: "black"
+        },
+        headerTitleStyle: {
+            color: "white"
+        },
+        headerBackTitleStyle: {
+            color: "white"
+        },
+        headerTintColor: "white"
+    },
+});
+
+export const Tabs = createBottomTabNavigator({
+    HomeScreen: {
+        screen: FeedStack,
+        navigationOptions: {
+            tabBarIcon: <Icon name="text-document" size={25} color="white" />
+        }
+    },
+    LocationScreen: {
+        screen: FeedStack,
+        navigationOptions: {
+            tabBarIcon: <Icon name="location-pin" size={25} color="white" />
+        }
+    },
+    SearchScreen: {
+        screen: FeedStack,
+        navigationOptions: {
+            tabBarIcon: <Icon name="magnifying-glass" size={25} color="white" />
+        }
+    }
+},
+{
+    tabBarOptions: {
+        showLabel: false,
+        activeBackgroundColor: "gray",
+        labelStyle: {
+            fontSize: 10,
+        },
+        style: {
+            backgroundColor: 'black',
+        },
+    }
+});
 
 // class DetailsScreen extends React.Component {
 //   render() {
