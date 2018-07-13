@@ -12,7 +12,7 @@ export default class LocationScreen extends React.Component {
                     onPress={() => this.props.navigation.navigate('Details')}
                 /> */}
                 <ScrollView style={{flex: 1}}>
-                    <Text style={{color: "white", fontWeight: "bold"}}>HomeScreen2</Text>
+                    <Text style={{color: "white", fontWeight: "bold"}}>LocationScreen</Text>
                 </ScrollView>
                 {/* <Footer /> */}
             </View>

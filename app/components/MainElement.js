@@ -7,7 +7,7 @@ export default class MainElement extends React.Component {
     }
     render() {
         return (
-            <TouchableHighlight underlayColor="white" onPress={this._onPressButton}>
+            <TouchableHighlight underlayColor="white" onPress={this.props.func}>
                 <View style={{height: 200, alignItems: 'center', justifyContent: 'center'}}>
                     {/* <ImageBackground source={this.props.icon} style={styles.imagebackground}> */}
                     <Image

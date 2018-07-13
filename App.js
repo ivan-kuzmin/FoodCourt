@@ -6,20 +6,34 @@ import Icon from 'react-native-vector-icons/Entypo';
 import HomeScreen from './app/screens/HomeScreen'
 import LocationScreen from './app/screens/LocationScreen'
 import SearchScreen from './app/screens/SearchScreen'
+import TestScreen from './app/screens/TestScreen'
 
 import MainElement from './app/components/MainElement'
 
-StatusBar.setBarStyle('light-content', true);
 
-export default class App extends React.Component {
-    render() {
-        return (
-            <Tabs />
-        );
-    }
+
+
+
+StatusBar.setBarStyle('light-content', true);
+const commonNavigationOptions = {
+    headerStyle: {
+        backgroundColor: "black",
+        borderBottomWidth: 0
+    },
+    headerTitleStyle: {
+        color: "white"
+    },
+    headerBackTitleStyle: {
+        color: "white"
+    },
+    headerTintColor: "white"
 }
 
-export const FeedStack = createStackNavigator({
+
+
+
+
+export const HomeStack = createStackNavigator({
     Home: {
         screen: HomeScreen,
         navigationOptions: {
@@ -27,42 +41,67 @@ export const FeedStack = createStackNavigator({
         }
     },
     Details: {
-        screen: LocationScreen,
+        screen: TestScreen,
         navigationOptions: {
-            title: "Location"
+            title: "Test"
         }
     }
 },
 {
-    navigationOptions: {
-        headerStyle: {
-            backgroundColor: "black"
-        },
-        headerTitleStyle: {
-            color: "white"
-        },
-        headerBackTitleStyle: {
-            color: "white"
-        },
-        headerTintColor: "white"
+    navigationOptions: commonNavigationOptions,
+});
+
+export const LocationStack = createStackNavigator({
+    Home: {
+        screen: LocationScreen,
+        navigationOptions: {
+            title: "Location"
+        }
     },
+    Details: {
+        screen: TestScreen,
+        navigationOptions: {
+            title: "Test"
+        }
+    }
+},
+{
+    navigationOptions: commonNavigationOptions,
+});
+
+export const SearchStack = createStackNavigator({
+    Home: {
+        screen: SearchScreen,
+        navigationOptions: {
+            title: "Search"
+        }
+    },
+    Details: {
+        screen: TestScreen,
+        navigationOptions: {
+            title: "Test"
+        }
+    }
+},
+{
+    navigationOptions: commonNavigationOptions,
 });
 
 export const Tabs = createBottomTabNavigator({
     HomeScreen: {
-        screen: FeedStack,
+        screen: HomeStack,
         navigationOptions: {
             tabBarIcon: <Icon name="text-document" size={25} color="white" />
         }
     },
     LocationScreen: {
-        screen: FeedStack,
+        screen: LocationStack,
         navigationOptions: {
             tabBarIcon: <Icon name="location-pin" size={25} color="white" />
         }
     },
     SearchScreen: {
-        screen: FeedStack,
+        screen: SearchStack,
         navigationOptions: {
             tabBarIcon: <Icon name="magnifying-glass" size={25} color="white" />
         }
@@ -77,9 +116,18 @@ export const Tabs = createBottomTabNavigator({
         },
         style: {
             backgroundColor: 'black',
+            borderTopWidth: 0
         },
     }
 });
+
+export default class App extends React.Component {
+    render() {
+        return (
+            <Tabs />
+        );
+    }
+}
 
 // class DetailsScreen extends React.Component {
 //   render() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Button } from 'react-native';
 
-export default class SearchScreen extends React.Component {
+export default class LocationScreen extends React.Component {
     render() {
         return (
             <View style={{flex: 1, backgroundColor: 'gray'}}>
@@ -12,7 +12,7 @@ export default class SearchScreen extends React.Component {
                     onPress={() => this.props.navigation.navigate('Details')}
                 /> */}
                 <ScrollView style={{flex: 1}}>
-                    <Text style={{color: "white", fontWeight: "bold"}}>SearchScreen</Text>
+                    <Text style={{color: "white", fontWeight: "bold"}}>Test</Text>
                 </ScrollView>
                 {/* <Footer /> */}
             </View>
