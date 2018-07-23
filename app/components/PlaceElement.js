@@ -9,8 +9,7 @@ export default class PlaceElement extends React.Component {
                 <View style={{flex: 1}}>
                     <Image
                         style={{width: 50, height: 80}}
-                        // source={ 'require(\'' + this.props.icon + '\')'}
-                        source = {require('../assets/images/semenovskaya.jpg')}
+                        source={this.props.icon}
                     />
                 </View>
                 <View style={{flex: 4}}>

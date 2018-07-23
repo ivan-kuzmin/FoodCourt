@@ -1,36 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Image, Alert, TouchableHighlight } from 'react-native';
 
-var places = [
-    {
-        'icon': '../assets/images/semenovskaya.jpg',
-        'name':' Place 1',
-        'description': 'Good place',
-        'adress': 'Semenovskaya, 1'
-    }, 
-    {
-        'icon': '../assets/images/danilovskiy.jpg',
-        'name': 'Place 2',
-        'description': 'Nice place',
-        'adress': 'Danilovskaya, 2'
-
-    },
-    {
-        'icon': '../assets/images/usachevskiy.jpg',
-        'name': 'Place 3',
-        'description': 'Awful place',
-        'adress': 'Usachevskaya, 3'
-    } 
-]; 
-
-global.places = places
-
-
-
 export default class MainElement extends React.Component {
-    _onPressButton() {
-        Alert.alert('You tapped the button!')
-    }
+    
     render() {
         return (
             <TouchableHighlight underlayColor="white" onPress={this.props.func}>
