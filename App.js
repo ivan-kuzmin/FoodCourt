@@ -7,11 +7,7 @@ import HomeScreen from './app/screens/HomeScreen'
 import LocationScreen from './app/screens/LocationScreen'
 import SearchScreen from './app/screens/SearchScreen'
 import TestScreen from './app/screens/TestScreen'
-
 import MainElement from './app/components/MainElement'
-
-
-
 
 
 StatusBar.setBarStyle('light-content', true);
@@ -28,9 +24,6 @@ const commonNavigationOptions = {
     },
     headerTintColor: "white"
 }
-
-
-
 
 
 export const HomeStack = createStackNavigator({
