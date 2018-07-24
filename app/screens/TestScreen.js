@@ -5,12 +5,8 @@ import PlaceElement from '../components/PlaceElement';
 import fairs from '../components/Fairs';
 
 export default class TestScreen extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-          fairs: fairs
-        }
+    state = {
+        fairs: fairs
     }
 
     render() {
@@ -18,7 +14,7 @@ export default class TestScreen extends React.Component {
         const fair_id = navigation.getParam('fair_id')
         // console.log(fairs)
         return (
-            fairs[fair_id].content.places.map(function(place, index){
+            this.state.fairs[fair_id].content.places.map(function(place, index){
                 return (
                     <PlaceElement key={index} style={styles.whole_place}
                         name={place.name}
@@ -27,8 +23,7 @@ export default class TestScreen extends React.Component {
                         icon={place.icon}
                     />
                 )
-            }
-          )
+            })
         );
     };
 };
