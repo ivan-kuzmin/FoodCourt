@@ -12,24 +12,28 @@
 				},
 				"places": [
 					{
+						"id": 0,
 						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
 						"name": "Семеновская ярмарка Place 1",
 						"description": "Good place",
 						"adress": "Семеновская площадь, 4а"
 					},
 					{
+						"id": 1,
 						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
 						"name": "Семеновская ярмарка Place 2",
 						"description": "Good place",
 						"adress": "Семеновская площадь, 4а"
 					},
 					{
+						"id": 2,
 						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
 						"name": "Семеновская ярмарка Place 3",
 						"description": "Good place",
 						"adress": "Семеновская площадь, 4а"
 					},
 					{
+						"id": 3,
 						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
 						"name": "Семеновская ярмарка Place 4",
 						"description": "Good place",
