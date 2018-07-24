@@ -6,7 +6,7 @@ import fairs from '../components/Fairs';
 
 export default class TestScreen extends React.Component {
     state = {
-        fairs: fairs
+      fairs: fairs
     }
 
     render() {
@@ -23,7 +23,8 @@ export default class TestScreen extends React.Component {
                         icon={place.icon}
                     />
                 )
-            })
+            }
+          )
         );
     };
 };
