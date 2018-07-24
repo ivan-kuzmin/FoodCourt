@@ -52,7 +52,7 @@
 					"latitude": 55.7121779,
 					"longitude": 37.6206429
 				},
-				"places": {}
+				"places": []
 			}
 		},
 		{
@@ -65,7 +65,7 @@
 					"latitude": 55.7274819,
 					"longitude": 37.5678689
 				},
-				"places": {}
+				"places": []
 			}
 		},
 		{
@@ -78,7 +78,7 @@
 					"latitude": 55.77660849,
 					"longitude": 37.674848699999984
 				},
-				"places": {}
+				"places": []
 			}
 		},
 		{
@@ -91,7 +91,7 @@
 					"latitude": 55.7443539,
 					"longitude": 37.679241
 				},
-				"places": {}
+				"places": []
 			}
 		},
 		{
@@ -104,7 +104,7 @@
 					"latitude": 55.6305246,
 					"longitude": 37.51649169
 				},
-				"places": {}
+				"places": []
 			}
 		},
 		{
@@ -117,7 +117,7 @@
 					"latitude": 55.683952,
 					"longitude": 37.5505828
 				},
-				"places": {}
+				"places": []
 			}
 		},
 		{
@@ -130,7 +130,7 @@
 					"latitude": 55.7668816,
 					"longitude": 37.6245211
 				},
-				"places": {}
+				"places": []
 			}
 		}
 	]
