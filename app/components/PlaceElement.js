@@ -9,13 +9,13 @@ export default class PlaceElement extends React.Component {
                 <View style={{flex: 1}}>
                     <Image
                         style={{width: 50, height: 80}}
-                        source={this.props.icon}
+                        source={{uri: this.props.content.icon}}
                     />
                 </View>
                 <View style={{flex: 4}}>
-                    <Text style={{fontWeight: 'bold', fontSize: 20}} > {this.props.name} </Text>
-                    <Text style={{fontStyle: 'italic'}}> {this.props.description} </Text>
-                    <Text style={{fontWeight: 'bold'}}> {this.props.adress} </Text>
+                    <Text style={{fontWeight: 'bold', fontSize: 20}} > {this.props.content.name} </Text>
+                    <Text style={{fontStyle: 'italic'}}> {this.props.content.description} </Text>
+                    <Text style={{fontWeight: 'bold'}}> {this.props.content.adress} </Text>
                 </View>
             </View>
         )

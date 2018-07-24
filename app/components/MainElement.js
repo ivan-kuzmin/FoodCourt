@@ -8,12 +8,12 @@ export default class MainElement extends React.Component {
 				<View style={{ height: 200, alignItems: "center", justifyContent: "center" }}>
 					<Image
                         style={{ width: "100%", height: "100%", position: "absolute" }}
-                        source={{uri: this.props.icon}} 
+                        source={{uri: this.props.content.icon}}
                         blurRadius={1}
                     />
 					<View style={styles.image_filter} />
-					<Text style={[styles.image_text, { fontSize: 25, textAlign: "center" }]}>{this.props.name}</Text>
-					<Text style={[styles.image_text, { fontWeight: "100", fontSize: 15, textAlign: "center" }]}>{this.props.adress}</Text>
+					<Text style={[styles.image_text, { fontSize: 25, textAlign: "center" }]}>{this.props.content.name}</Text>
+					<Text style={[styles.image_text, { fontWeight: "100", fontSize: 15, textAlign: "center" }]}>{this.props.content.adress}</Text>
 				</View>
 			</TouchableHighlight>
 		);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, StatusBar, ScrollView, Button, Image, Alert, TouchableHighlight } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, ScrollView, Button, Image, Alert, TouchableHighlight, ActivityIndicator } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/Entypo';
 
@@ -114,10 +114,45 @@ export const Tabs = createBottomTabNavigator({
     }
 });
 
+class BottomNavigator extends React.Component {
+    constructor(props) {
+		super(props);
+		this.state = { isLoading: true };
+	}
+	componentDidMount() {
+		return fetch("https://raw.githubusercontent.com/ivan-kuzmin/FoodCourt/master/db.json")
+			.then(response => response.json())
+			.then(responseJson => {
+				this.setState(
+					{
+						isLoading: false,
+						fairs: responseJson.shops
+					},
+					function() {}
+				);
+			})
+			.catch(error => {
+				return console.error(error);
+			});
+	}
+    render() {
+        if (this.state.isLoading) {
+			return (
+				<View style={{ flex: 1, padding: 20, backgroundColor: "black" }}>
+					<ActivityIndicator style={{ flex: 1 }} />
+				</View>
+			);
+		}
+        return(
+            <Tabs screenProps={{ fairs: this.state.fairs }} />
+        );
+    }
+}
+
 export default class App extends React.Component {
     render() {
         return (
-            <Tabs />
+            <BottomNavigator />
         );
     }
 }

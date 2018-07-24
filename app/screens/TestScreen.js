@@ -2,25 +2,27 @@ import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Button, Image } from 'react-native';
 import MainElement from '../components/MainElement';
 import PlaceElement from '../components/PlaceElement';
-import fairs from '../components/Fairs';
 
 export default class TestScreen extends React.Component {
-    state = {
-      fairs: fairs
-    }
-
     render() {
         const { navigation } = this.props;
-        const fair_id = navigation.getParam('fair_id')
+        const fair_id = navigation.getParam('id')
         // console.log(fairs)
+        // return (
+        //     <Text>{JSON.stringify(this.props.screenProps.fairs)}</Text>
+        // )
+        if (!this.props.screenProps.fairs[fair_id].content.places) {  // Возможно не работает
+            return (
+                <Text style={{flex: 1, justifyContent: "middle", alignItems: "center"}}>Здесь пока ничего нет :(</Text>
+            )
+        }
         return (
-            this.state.fairs[fair_id].content.places.map(function(place, index){
+            this.props.screenProps.fairs[fair_id].content.places.map(function(place){
                 return (
-                    <PlaceElement key={index} style={styles.whole_place}
-                        name={place.name}
-                        description={place.description}
-                        adress={place.adress}
-                        icon={place.icon}
+                    <PlaceElement
+                        key={place.id}
+                        style={styles.whole_place}
+                        content={place}
                     />
                 )
             }
