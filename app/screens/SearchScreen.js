@@ -1,21 +1,54 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Button } from 'react-native';
+import Header from '../components/SearchScreenHeader'
+import PlaceElement from "../components/PlaceElement";
 
 export default class SearchScreen extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: "Here should be json object, includes all places in order" // very important
+        }
+    }
     render() {
         return (
-            <View style={{flex: 1, backgroundColor: 'gray'}}>
-                {/* <StatusBar barStyle="light-content" /> */}
-                {/* <Header /> */}
-                {/* <Button
-                    title="Go to Details"
-                    onPress={() => this.props.navigation.navigate('Details')}
-                /> */}
+            <View style={{flex: 1}}>
+                <Header />
                 <ScrollView style={{flex: 1}}>
-                    <Text style={{color: "white", fontWeight: "bold"}}>SearchScreen</Text>
+                    {
+                        this.props.screenProps.fairs.map(function(fair){
+                            return fair.content.places.map(function(place){
+                                return (
+                                    <PlaceElement
+                                        key={place.id}
+                                        style={styles.whole_place}
+                                        content={place}
+                                    />
+                                )
+                            })
+                        })
+                    }
                 </ScrollView>
-                {/* <Footer /> */}
             </View>
         );
     }
 }
+
+const styles = StyleSheet.create({
+    whole_place: {
+        flexDirection: 'row',
+        margin: 10
+    },
+    place_image: {
+
+    },
+    place_name: {
+
+    },
+    place_description: {
+
+    },
+    place_adress: {
+
+    }
+});

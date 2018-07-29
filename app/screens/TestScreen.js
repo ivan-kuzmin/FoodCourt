@@ -11,9 +11,11 @@ export default class TestScreen extends React.Component {
         // return (
         //     <Text>{JSON.stringify(this.props.screenProps.fairs)}</Text>
         // )
-        if (!this.props.screenProps.fairs[fair_id].content.places) {  // Возможно не работает
+        if (this.props.screenProps.fairs[fair_id].content.places.length == 0) {  // Возможно не работает
             return (
-                <Text style={{flex: 1, justifyContent: "middle", alignItems: "center"}}>Здесь пока ничего нет :(</Text>
+                <View style={{flex: 1, alignItems: "center", justifyContent: "center"}}>
+                    <Text style={{color: "black"}}>Здесь пока ничего нет :(</Text>
+                </View>
             )
         }
         return (
@@ -25,8 +27,7 @@ export default class TestScreen extends React.Component {
                         content={place}
                     />
                 )
-            }
-          )
+            })
         );
     };
 };

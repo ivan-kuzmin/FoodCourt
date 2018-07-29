@@ -101,6 +101,7 @@ export const Tabs = createBottomTabNavigator({
     }
 },
 {
+    initialRouteName: 'HomeScreen',
     tabBarOptions: {
         showLabel: false,
         activeBackgroundColor: "gray",

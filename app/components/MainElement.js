@@ -8,7 +8,7 @@ export default class MainElement extends React.Component {
 				<View style={{ height: 200, alignItems: "center", justifyContent: "center" }}>
 					<Image
                         style={{ width: "100%", height: "100%", position: "absolute" }}
-                        source={{uri: this.props.content.icon}}
+                        source={{ uri: this.props.content.icon }}
                         blurRadius={1}
                     />
 					<View style={styles.image_filter} />
