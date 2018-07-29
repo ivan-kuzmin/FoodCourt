@@ -52,7 +52,29 @@
 					"latitude": 55.7121779,
 					"longitude": 37.6206429
 				},
-				"places": []
+				"places": [
+					{
+						"id": 0,
+						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/danilovskiy.jpg?raw=true",
+						"name": "Даниловский рынок Place 1",
+						"description": "Very Good place",
+						"adress": "Мытная улица, 74"
+					},
+					{
+						"id": 1,
+						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/danilovskiy.jpg?raw=true",
+						"name": "Даниловский рынок Place 2",
+						"description": "Very Good place",
+						"adress": "Мытная улица, 74"
+					},
+					{
+						"id": 2,
+						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/danilovskiy.jpg?raw=true",
+						"name": "Даниловский рынок Place 3",
+						"description": "Very Good place",
+						"adress": "Мытная улица, 74"
+					}
+				]
 			}
 		},
 		{
