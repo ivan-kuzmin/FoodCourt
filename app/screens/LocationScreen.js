@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Button } from 'react-native';
 import MapView from 'react-native-maps';
 // import fairs from '../components/Fairs';
+import ParallaxScrollView from 'react-native-parallax-scroll-view';
+import PlaceElement from '../components/PlaceElement';
 
 export default class LocationScreen extends React.Component {
     // componentWillMount() {
@@ -9,13 +11,13 @@ export default class LocationScreen extends React.Component {
     // }
     render() {
         return (
-            <View style={{flex: 1, backgroundColor: 'gray', flexDirection: 'column'}}>
-                <ScrollView style={{flex: 1}}>
-                    <Text style={{color: "white", fontWeight: "bold"}}>LocationScreen</Text>
-                </ScrollView>
-
-                <View style={{flex:3}}>
-                    <MapView style={styles.map}
+            <ParallaxScrollView
+                backgroundColor="white"
+                contentBackgroundColor="white"
+                parallaxHeaderHeight={300}
+                fadeOutForeground={false}
+                renderForeground={() => (
+                    <MapView style={[styles.map, {height: 300}]}
                         showsUserLocation
                         initialRegion={{
                             latitude: 55.751244,
@@ -35,8 +37,24 @@ export default class LocationScreen extends React.Component {
                           })
                         }
                     </MapView>
+                )}
+                >
+                <View>
+                    {
+                        this.props.screenProps.fairs.map(function(fair){
+                            return fair.content.places.map(function(place){
+                                return (
+                                    <PlaceElement
+                                        key={place.id}
+                                        style={styles.whole_place}
+                                        content={place}
+                                    />
+                                )
+                            })
+                        })
+                    }
                 </View>
-            </View>
+            </ParallaxScrollView>
         );
     }
 }

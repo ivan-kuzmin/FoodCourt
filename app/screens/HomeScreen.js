@@ -10,6 +10,7 @@ export default class HomeScreen extends React.Component {
 		return (
 			<View style={{ flex: 1, backgroundColor: "gray" }}>
 				<ScrollView style={{ flex: 1 }}>
+                    <Button title="Huy" onPress={this.props.screenProps.toggleSideMenu} />
 					{this.props.screenProps.fairs.map(
 						function(fair) {
 							return (

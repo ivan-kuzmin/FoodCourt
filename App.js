@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, StatusBar, ScrollView, Button, Image, Alert, TouchableHighlight, ActivityIndicator } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/Entypo';
+import SideMenu from 'react-native-side-menu'
 
 import HomeScreen from './app/screens/HomeScreen'
 import LocationScreen from './app/screens/LocationScreen'
@@ -101,7 +102,7 @@ export const Tabs = createBottomTabNavigator({
     }
 },
 {
-    initialRouteName: 'HomeScreen',
+    initialRouteName: 'LocationScreen',
     tabBarOptions: {
         showLabel: false,
         activeBackgroundColor: "gray",
@@ -118,8 +119,14 @@ export const Tabs = createBottomTabNavigator({
 class BottomNavigator extends React.Component {
     constructor(props) {
 		super(props);
-		this.state = { isLoading: true };
+		this.state = {
+            isLoading: true,
+            isOpenSideMenu: false
+        };
 	}
+    toggleSideMenu() {
+        this.setState({isOpenSideMenu: true})
+    }
 	componentDidMount() {
 		return fetch("https://raw.githubusercontent.com/ivan-kuzmin/FoodCourt/master/db.json")
 			.then(response => response.json())
@@ -137,6 +144,7 @@ class BottomNavigator extends React.Component {
 			});
 	}
     render() {
+        const menu = <View navigator={navigator}/>
         if (this.state.isLoading) {
 			return (
 				<View style={{ flex: 1, padding: 20, backgroundColor: "black" }}>
@@ -145,7 +153,13 @@ class BottomNavigator extends React.Component {
 			);
 		}
         return(
-            <Tabs screenProps={{ fairs: this.state.fairs }} />
+            <SideMenu
+                menu={menu}
+                isOpen={this.state.isOpenSideMenu}
+                disableGestures={true}
+            >
+                <Tabs screenProps={{ fairs: this.state.fairs, toggleSideMenu: this.toggleSideMenu.bind(this) }} />
+            </SideMenu>
         );
     }
 }
