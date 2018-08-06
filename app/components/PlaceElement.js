@@ -1,11 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Image, Alert, TouchableHighlight } from 'react-native';
 
-
 export default class PlaceElement extends React.Component {
     render() {
         return (
-            <View style={{flexDirection: 'row', margin: 10}}>
+            <View style={{flexDirection: 'row', margin: 10}} onPress={this.props.func}>
                 <View style={{flex: 1}}>
                     <Image
                         style={{width: 50, height: 80}}
