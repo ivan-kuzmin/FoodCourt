@@ -5,15 +5,15 @@
 			"content": {
 				"name": "Семеновская ярмарка",
 				"adress": "Семеновская площадь, 4",
-				"icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true"},
+				"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
 				"coordinate": {
 					"latitude": 55.78089562,
 					"longitude": 37.71965405
 				},
 				"places": [
 					{
-					    "id": 0,
-					    "icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true"},
+						"id": 0,
+					    "icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
 					    "name": "Семеновская ярмарка Place 1",
 					    "description": "Good place",
 					    "adress": "Семеновская площадь, 4а",
@@ -21,11 +21,11 @@
 					    "workHours": "23:00",
 					    "averageCheck": "500",
 					    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					    "phone": "8-988-888-88-88"
+						"phone": "8-988-888-88-88"
 					},
 					{
-					    "id": 1,
-					    "icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true"},
+						"id": 1,
+					    "icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
 					    "name": "Семеновская ярмарка Place 2",
 					    "description": "Good place",
 					    "adress": "Семеновская площадь, 4а",
@@ -33,11 +33,11 @@
 					    "workHours": "23:00",
 					    "averageCheck": "500",
 					    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					    "phone": "8-988-888-88-88"
+						"phone": "8-988-888-88-88"
 					},
 					{
-					    "id": 2,
-					    "icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true"},
+						"id": 2,
+					    "icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
 					    "name": "Семеновская ярмарка Place 3",
 					    "description": "Good place",
 					    "adress": "Семеновская площадь, 4а",
@@ -45,11 +45,11 @@
 					    "workHours": "23:00",
 					    "averageCheck": "500",
 					    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					    "phone": "8-988-888-88-88"
+						"phone": "8-988-888-88-88"
 					},
 					{
-					    "id": 3,
-					    "icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true"},
+						"id": 3,
+					    "icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
 					    "name": "Семеновская ярмарка Place 4",
 					    "description": "Good place",
 					    "adress": "Семеновская площадь, 4а",
@@ -57,7 +57,7 @@
 					    "workHours": "23:00",
 					    "averageCheck": "500",
 					    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					    "phone": "8-988-888-88-88"
+						"phone": "8-988-888-88-88"
 					}
 				]
 			}
@@ -67,7 +67,7 @@
 			"content": {
 				"name": "Даниловский рынок",
 				"adress": "Мытная улица, 74",
-				"icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/danilovskiy.jpg?raw=true"},
+				"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/danilovskiy.jpg?raw=true",
 				"coordinate": {
 					"latitude": 55.7121779,
 					"longitude": 37.6206429
@@ -75,21 +75,21 @@
 				"places": [
 					{
 						"id": 0,
-						"icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/danilovskiy.jpg?raw=true"},
+						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/danilovskiy.jpg?raw=true",
 						"name": "Даниловский рынок Place 1",
 						"description": "Very Good place",
 						"adress": "Мытная улица, 74"
 					},
 					{
 						"id": 1,
-						"icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/danilovskiy.jpg?raw=true"},
+						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/danilovskiy.jpg?raw=true",
 						"name": "Даниловский рынок Place 2",
 						"description": "Very Good place",
 						"adress": "Мытная улица, 74"
 					},
 					{
 						"id": 2,
-						"icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/danilovskiy.jpg?raw=true"},
+						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/danilovskiy.jpg?raw=true",
 						"name": "Даниловский рынок Place 3",
 						"description": "Very Good place",
 						"adress": "Мытная улица, 74"
@@ -102,7 +102,7 @@
 			"content": {
 				"name": "Усачевский рынок",
 				"adress": "улица Усачева, 26",
-				"icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/usachevskiy.jpg?raw=true"},
+				"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/usachevskiy.jpg?raw=true",
 				"coordinate": {
 					"latitude": 55.7274819,
 					"longitude": 37.5678689
@@ -115,7 +115,7 @@
 			"content": {
 				"name": "Гастроферма",
 				"adress": "улица Нижняя Красносельская, 35, строение 59",
-				"icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/gastroferma.jpg?raw=true"},
+				"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/gastroferma.jpg?raw=true",
 				"coordinate": {
 					"latitude": 55.77660849,
 					"longitude": 37.674848699999984
@@ -128,7 +128,7 @@
 			"content": {
 				"name": "Рогожский рынок",
 				"adress": "площадь Рогожская Застава, 1",
-				"icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/rogozskiy.jpg?raw=true"},
+				"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/rogozskiy.jpg?raw=true",
 				"coordinate": {
 					"latitude": 55.7443539,
 					"longitude": 37.679241
@@ -141,7 +141,7 @@
 			"content": {
 				"name": "Экомаркет в Коньково",
 				"adress": "Профсоюзная улица, 126, корпус 3",
-				"icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/ekomarket.jpg?raw=true"},
+				"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/ekomarket.jpg?raw=true",
 				"coordinate": {
 					"latitude": 55.6305246,
 					"longitude": 37.51649169
@@ -154,7 +154,7 @@
 			"content": {
 				"name": "Черемушкинский рынок",
 				"adress": "улица Вавилова, 64/1, строение 1",
-				"icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/cheremushkinskiy.jpg?raw=true"},
+				"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/cheremushkinskiy.jpg?raw=true",
 				"coordinate": {
 					"latitude": 55.683952,
 					"longitude": 37.5505828
@@ -167,7 +167,7 @@
 			"content": {
 				"name": "Центральный рынок",
 				"adress": "Рождественский бульвар, 1",
-				"icon": {"uri": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/centralniy.jpg?raw=true"},
+				"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/centralniy.jpg?raw=true",
 				"coordinate": {
 					"latitude": 55.7668816,
 					"longitude": 37.6245211
