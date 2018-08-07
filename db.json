@@ -13,31 +13,51 @@
 				"places": [
 					{
 						"id": 0,
-						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
-						"name": "Семеновская ярмарка Place 1",
-						"description": "Good place",
-						"adress": "Семеновская площадь, 4а"
+					    "icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
+					    "name": "Семеновская ярмарка Place 1",
+					    "description": "Good place",
+					    "adress": "Семеновская площадь, 4а",
+					    "statios": "м.Семеновская",
+					    "workHours": "23:00",
+					    "averageCheck": "500",
+					    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+						"phone": "8-988-888-88-88"
 					},
 					{
 						"id": 1,
-						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
-						"name": "Семеновская ярмарка Place 2",
-						"description": "Good place",
-						"adress": "Семеновская площадь, 4а"
+					    "icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
+					    "name": "Семеновская ярмарка Place 2",
+					    "description": "Good place",
+					    "adress": "Семеновская площадь, 4а",
+					    "statios": "м.Семеновская",
+					    "workHours": "23:00",
+					    "averageCheck": "500",
+					    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+						"phone": "8-988-888-88-88"
 					},
 					{
 						"id": 2,
-						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
-						"name": "Семеновская ярмарка Place 3",
-						"description": "Good place",
-						"adress": "Семеновская площадь, 4а"
+					    "icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
+					    "name": "Семеновская ярмарка Place 3",
+					    "description": "Good place",
+					    "adress": "Семеновская площадь, 4а",
+					    "statios": "м.Семеновская",
+					    "workHours": "23:00",
+					    "averageCheck": "500",
+					    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+						"phone": "8-988-888-88-88"
 					},
 					{
 						"id": 3,
-						"icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
-						"name": "Семеновская ярмарка Place 4",
-						"description": "Good place",
-						"adress": "Семеновская площадь, 4а"
+					    "icon": "https://github.com/ivan-kuzmin/FoodCourt/blob/master/app/assets/images/semenovskaya.jpg?raw=true",
+					    "name": "Семеновская ярмарка Place 4",
+					    "description": "Good place",
+					    "adress": "Семеновская площадь, 4а",
+					    "statios": "м.Семеновская",
+					    "workHours": "23:00",
+					    "averageCheck": "500",
+					    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+						"phone": "8-988-888-88-88"
 					}
 				]
 			}
