@@ -1,0 +1,34 @@
+dependencies: \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-maps/lib/ios/AirMaps/AIRMapMarkerManager.m \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-maps/lib/ios/AirMaps/AIRMapMarkerManager.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert+CoreLocation.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUIManager.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-maps/lib/ios/AirMaps/AIRMapMarker.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-maps/lib/ios/AirMaps/AIRMapCallout.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTView.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-maps/lib/ios/AirMaps/AIRMap.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-maps/lib/ios/AirMaps/Callout/SMCalloutView.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-maps/lib/ios/AirMaps/RCTConvert+AirMap.h

@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCViewController.m \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCViewController.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCNavigationController.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCTabBarController.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCDrawerController/RCCDrawerController.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCDrawerController/MMDrawerController/MMDrawerController.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCDrawerController/RCCDrawerProtocol.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCDrawerController/RCCTheSideBarManagerViewController.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCDrawerController/TheSidebarController/TheSidebarController.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCDrawerController/TheSidebarController/Animations/SidebarAnimation.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCManager.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCExternalViewControllerProtocol.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/Helpers/RCTHelpers.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/Helpers/RCCTitleViewHelper.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/node_modules/react-native-navigation/ios/RCCCustomTitleView.h \
+  /Users/ivan/Documents/GitHub/FoodCourt/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootViewDelegate.h

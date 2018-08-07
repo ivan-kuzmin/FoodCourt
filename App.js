@@ -1,210 +1,85 @@
-import React from 'react';
-import { StyleSheet, Text, View, StatusBar, ScrollView, Button, Image, Alert, TouchableHighlight, ActivityIndicator } from 'react-native';
-import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
-import Icon from 'react-native-vector-icons/Entypo';
-import SideMenu from 'react-native-side-menu'
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ * @flow
+ */
 
-import HomeScreen from './app/screens/HomeScreen'
-import LocationScreen from './app/screens/LocationScreen'
-import SearchScreen from './app/screens/SearchScreen'
-import TestScreen from './app/screens/TestScreen'
-import MainElement from './app/components/MainElement'
+import { Navigation } from 'react-native-navigation';
+import { registerScreens } from './src/screens';
 
+registerScreens();
 
-StatusBar.setBarStyle('light-content', true);
-const commonNavigationOptions = {
-    headerStyle: {
-        backgroundColor: "black",
-        borderBottomWidth: 0
-    },
-    headerTitleStyle: {
-        color: "white"
-    },
-    headerBackTitleStyle: {
-        color: "white"
-    },
-    headerTintColor: "white"
-}
-
-
-export const HomeStack = createStackNavigator({
-    Home: {
-        screen: HomeScreen,
-        navigationOptions: {
-            title: "FoodCourt"
-        }
-    },
-    Details: {
-        screen: TestScreen,
-        navigationOptions: {
-            title: "Test"
-        }
-    }
-},
-{
-    navigationOptions: commonNavigationOptions,
-});
-
-export const LocationStack = createStackNavigator({
-    Home: {
-        screen: LocationScreen,
-        navigationOptions: {
-            title: "Location"
-        }
-    },
-    Details: {
-        screen: TestScreen,
-        navigationOptions: {
-            title: "Test"
-        }
-    }
-},
-{
-    navigationOptions: commonNavigationOptions,
-});
-
-export const SearchStack = createStackNavigator({
-    Home: {
-        screen: SearchScreen,
-        navigationOptions: {
-            title: "Search"
-        }
-    },
-    Details: {
-        screen: TestScreen,
-        navigationOptions: {
-            title: "Test"
-        }
-    }
-},
-{
-    navigationOptions: commonNavigationOptions,
-});
-
-export const Tabs = createBottomTabNavigator({
-    HomeScreen: {
-        screen: HomeStack,
-        navigationOptions: {
-            tabBarIcon: <Icon name="text-document" size={25} color="white" />
-        }
-    },
-    LocationScreen: {
-        screen: LocationStack,
-        navigationOptions: {
-            tabBarIcon: <Icon name="location-pin" size={25} color="white" />
-        }
-    },
-    SearchScreen: {
-        screen: SearchStack,
-        navigationOptions: {
-            tabBarIcon: <Icon name="magnifying-glass" size={25} color="white" />
-        }
-    }
-},
-{
-    initialRouteName: 'LocationScreen',
-    tabBarOptions: {
-        showLabel: false,
-        activeBackgroundColor: "gray",
-        labelStyle: {
-            fontSize: 10,
+Navigation.startTabBasedApp({
+    tabs: [
+        {
+            screen: 'FoodCourt.HomeScreen',
+            icon: require('./src/icons/home.png'),
+            // selectedIcon: require('./src/icons/home.png'),
+            title: 'FoodCourt',
+            iconInsets: { // add this to change icon position (optional, iOS only).
+                top: 6, // optional, default is 0.
+                left: 0, // optional, default is 0.
+                bottom: -6, // optional, default is 0.
+                right: 0 // optional, default is 0.
+            },
+            navigatorStyle: {
+                statusBarTextColorSchemeSingleScreen: 'light',
+                navBarTextColor: 'white',
+                navBarBackgroundColor: 'black'
+            }
         },
-        style: {
-            backgroundColor: 'black',
-            borderTopWidth: 0
+        {
+            screen: 'FoodCourt.LocationScreen',
+            icon: require('./src/icons/location.png'),
+            // selectedIcon: require('./src/icons/location.png'),
+            title: 'Location',
+            iconInsets: { // add this to change icon position (optional, iOS only).
+                top: 6, // optional, default is 0.
+                left: 0, // optional, default is 0.
+                bottom: -6, // optional, default is 0.
+                right: 0 // optional, default is 0.
+            },
+            navigatorStyle: {
+                statusBarTextColorSchemeSingleScreen: 'light',
+                navBarTextColor: 'white',
+                navBarBackgroundColor: 'black'
+            }
         },
-    }
+        {
+            screen: 'FoodCourt.SearchScreen',
+            icon: require('./src/icons/search.png'),
+            // selectedIcon: require('./src/icons/search.png'),
+            title: 'Search',
+            iconInsets: { // add this to change icon position (optional, iOS only).
+                top: 6, // optional, default is 0.
+                left: 0, // optional, default is 0.
+                bottom: -6, // optional, default is 0.
+                right: 0 // optional, default is 0.
+            },
+            navigatorStyle: {
+                statusBarTextColorSchemeSingleScreen: 'light',
+                navBarTextColor: 'white',
+                navBarBackgroundColor: 'black'
+            }
+        }
+    ],
+    drawer: {
+        left: {
+            screen: 'FoodCourt.Drawer'
+        },
+        disableOpenGesture: true
+    },
+    tabsStyle: { // optional, **iOS Only** add this if you want to style the tab bar beyond the defaults
+        tabBarHidden: false, // make the tab bar hidden
+        tabBarButtonColor: 'gray', // change the color of the tab icons and text (also unselected)
+        tabBarSelectedButtonColor: 'white', // change the color of the selected tab icon and text (only selected)
+        tabBarBackgroundColor: 'black', // change the background color of the tab bar
+        tabBarTranslucent: false, // change the translucent of the tab bar to false
+        tabBarHideShadow: true // Remove default tab bar top shadow (hairline)
+    },
+    appStyle: {
+        orientation: 'portrait' // Sets a specific orientation to the entire app. Default: 'auto'. Supported values: 'auto', 'landscape', 'portrait'
+    },
 });
-
-class BottomNavigator extends React.Component {
-    constructor(props) {
-		super(props);
-		this.state = {
-            isLoading: true,
-            isOpenSideMenu: false
-        };
-	}
-    toggleSideMenu() {
-        this.setState({isOpenSideMenu: true})
-    }
-	componentDidMount() {
-		return fetch("https://raw.githubusercontent.com/ivan-kuzmin/FoodCourt/master/db.json")
-			.then(response => response.json())
-			.then(responseJson => {
-				this.setState(
-					{
-						isLoading: false,
-						fairs: responseJson.shops
-					},
-					function() {}
-				);
-			})
-			.catch(error => {
-				return console.error(error);
-			});
-	}
-    render() {
-        const menu = <View navigator={navigator}/>
-        if (this.state.isLoading) {
-			return (
-				<View style={{ flex: 1, padding: 20, backgroundColor: "black" }}>
-					<ActivityIndicator style={{ flex: 1 }} />
-				</View>
-			);
-		}
-        return(
-            <SideMenu
-                menu={menu}
-                isOpen={this.state.isOpenSideMenu}
-                disableGestures={true}
-            >
-                <Tabs screenProps={{ fairs: this.state.fairs, toggleSideMenu: this.toggleSideMenu.bind(this) }} />
-            </SideMenu>
-        );
-    }
-}
-
-export default class App extends React.Component {
-    render() {
-        return (
-            <BottomNavigator />
-        );
-    }
-}
-
-// class DetailsScreen extends React.Component {
-//   render() {
-//     return (
-//       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-//         <Text>Details Screen</Text>
-//       </View>
-//     );
-//   }
-// }
-//
-// const RootStack = createStackNavigator(
-//     {
-//         Home: HomeScreen,
-//         Details: DetailsScreen
-//     },
-//     {
-//         initialRouteName: 'Home',
-//     }
-// );
-//
-// export default class App extends React.Component {
-//   render() {
-//     return <RootStack />;
-//   }
-// }
-
-// const styles = StyleSheet.create({
-
-    // imagebackground: {
-    //     width: '100%',
-    //     height: 200,
-    //     alignItems: 'center',
-    //     justifyContent: 'center',
-    //     opacity: 0.5
-    // },
-// });
