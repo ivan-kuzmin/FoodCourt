@@ -9,7 +9,7 @@ import SearchScreen from './app/screens/SearchScreen'
 import TestScreen from './app/screens/TestScreen'
 import MainElement from './app/components/MainElement'
 
-
+// Lol
 StatusBar.setBarStyle('light-content', true);
 const commonNavigationOptions = {
     headerStyle: {
