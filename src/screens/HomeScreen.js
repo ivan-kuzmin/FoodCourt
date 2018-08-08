@@ -12,7 +12,7 @@ export default class HomeScreen extends React.Component {
         };
 	}
 	componentDidMount() {
-		return fetch("https://raw.githubusercontent.com/ivan-kuzmin/FoodCourt/master/db.json")
+		return fetch("https://raw.githubusercontent.com/ivan-kuzmin/FoodCourt/master/db/db.json")
 			.then(response => response.json())
 			.then(responseJson => {
 				this.setState(
