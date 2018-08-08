@@ -1,5 +1,11 @@
-import React from "react";
-import { StyleSheet, Text, View, Button, Image, Alert, TouchableHighlight } from "react-native";
+import React from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TouchableHighlight,
+} from 'react-native';
 
 export default class MainElement extends React.Component {
 	navigation() {
