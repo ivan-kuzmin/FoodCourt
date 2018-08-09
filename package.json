@@ -7,6 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "npm": "^6.3.0",
     "react": "16.4.1",
     "react-native": "0.56.0",
     "react-native-maps": "github:mikemorris/react-native-maps#ef5c839252e427268ae2ebbf4f0cced1cb51fed6",
@@ -23,6 +24,9 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "jest": "23.4.2",
     "react-test-renderer": "16.4.1"
+  },
+  "rnpm": {
+    "assets": ["./assets/fonts"]
   },
   "jest": {
     "preset": "react-native"

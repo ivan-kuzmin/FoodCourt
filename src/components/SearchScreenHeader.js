@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     },
     textinput: {
         flex: 1,
-        fontWeight: "bold",
-        fontSize: 12
+        fontSize: 16,
+        fontFamily: 'Roboto-Regular'
     }
 });

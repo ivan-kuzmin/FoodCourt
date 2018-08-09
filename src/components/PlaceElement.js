@@ -38,20 +38,25 @@ export default class PlaceElement extends React.Component {
     render() {
         return (
             <TouchableHighlight underlayColor="white" onPress={() => this.navigation()}>
-                <View style={{flexDirection: 'row', margin: 10}}>
-                    <View style={{flex: 1}}>
-                        <Image
-                            style={{width: 50, height: 80}}
-                            defaultSource={require('../images/default.jpg')}
-                            source={{uri: this.props.content.icon}}
-                        />
-                    </View>
-                    <View style={{flex: 4}}>
-                        <Text style={{fontWeight: 'bold', fontSize: 20}} > {this.props.content.name} </Text>
-                        <Text style={{fontStyle: 'italic'}}> {this.props.content.description} </Text>
-                        <Text style={{fontWeight: 'bold'}}> {this.props.content.adress} </Text>
-                    </View>
+            <View style={{flexDirection: 'row', padding: 15, borderBottomWidth: 1, borderColor: "#d3d3d3"}}>
+                <View style={{flex: 1}}>
+                    <Image
+                        style={{width: 65, height: 90}}
+                        defaultSource={require('../images/default.jpg')}
+                        source={{uri: this.props.content.icon}}
+                    />
                 </View>
+                <View style={{flex: 4, marginLeft: 15, justifyContent: "space-between"}}>
+                    <Text style={{fontFamily: 'Roboto-Medium', fontWeight: 'bold', fontSize: 25}}>{this.props.content.name}</Text>
+                    <Text style={{fontStyle: 'italic'}}>{this.props.content.description}</Text>
+                    <Text>
+                      <Text style={{fontSize: 16, color: "black"}}>₽</Text>
+                      <Text style={{fontSize: 16, color: "#d3d3d3"}}>₽</Text>
+                      <Text style={{fontSize: 16, color: "#d3d3d3"}}>₽</Text>
+                      <Text style={{fontSize: 16, color: "#d3d3d3"}}>₽</Text>
+                    </Text>
+                </View>
+            </View>
             </TouchableHighlight>
         )
     }
