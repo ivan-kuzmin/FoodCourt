@@ -6,16 +6,21 @@
   "ecmaFeatures": {
     "classes": true,
   },
+  "globals": {
+    "fetch": false
+  },
   // We can add/overwrite custom rules here
   rules: {
     // React Native has JSX in JS files
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
     // React Native includes images via require('../images/example.png')
     'global-require': 'off',
-    'max-len': ["error", { "code": 80 }],
+    'max-len': ["error", { "code": 80, "ignoreStrings": true }],
     'react/jsx-closing-bracket-location': [1, {selfClosing: 'line-aligned', nonEmpty: 'after-props'}],
     'react/destructuring-assignment': [<enabled>, "always", { "ignoreClassFields": <boolean> }],
     'react/prop-types': [<enabled>, { ignore: <ignore>, customValidators: <customValidator> }],
-    'object-curly-spacing': ["error", "never"]
+    'object-curly-spacing': ["error", "never"],
+    "react/prefer-stateless-function": [<enabled>, { "ignorePureComponents": <ignorePureComponents> }],
+    "react/no-array-index-key": false
   },
 }
